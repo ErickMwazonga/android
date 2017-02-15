@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.erickmwazonga.studentcompanion.AddExercise">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Holiday"
+        android:onClick="addHoliday"
+        android:background="@drawable/button_rounded"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/viewHolidayButton" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/holidayName"
+            android:layout_marginTop="5dp"
+            android:hint="Name"
+            android:backgroundTint="@color/colorPrimary"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/holidayName"
+            android:id="@+id/linearLayoutCheck">
+
+            <TextView
+                android:text="Start Date : "
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/holidayStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                style="@android:style/Widget.Holo.Spinner"
+                android:hint="Start Date"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/linearLayoutCheck"
+            android:id="@+id/linearLayoutend">
+
+            <TextView
+                android:text="End Date   :"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/holidayEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                style="@android:style/Widget.Holo.Spinner"
+                android:hint="End Date"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/linearLayoutend">
+            <Button
+                android:id="@+id/holidayCancel"
+                android:text="Cancel"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:onClick="cancelHoliday"
+                android:background="@drawable/button_rounded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/holidaySave"
+                android:text="Save"
+                android:onClick="saveHoliday"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

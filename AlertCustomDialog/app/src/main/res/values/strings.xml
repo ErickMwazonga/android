@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AlertCustomDialog</string>
+    <string name="cancel">CANCEL</string>
+    <string name="ok">OK</string>
+</resources>

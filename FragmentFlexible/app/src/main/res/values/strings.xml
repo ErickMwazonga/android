@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FragmentFlexible</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="titles">
+        <item>Activities</item>
+        <item>Services</item>
+        <item>Content Providers</item>
+        <item>Intents and Intents Filters</item>
+    </string-array>
+    <string-array name="descriptions">
+        <item>Confidentiality is an assurance that sensitive information is not intentionally or accidentally disclosed to unauthorized individuals. Confidentiality, like most of the characteristics of information, is interdependent with other characteristics and is most closely related to the characteristic known as privacy.</item>
+        <item>The value of confidentiality of information is especially high when it is personal information about employees, customers, or patients. Individuals who transact with an organization expect that their personal information will remain confidential, whether the organization is a federal agency, such as the Internal Revenue Service, or a business.</item>
+        <item>Problems arise when companies disclose confidential information. Sometimes this disclosure is intentional, but there are times when disclosure of confidential information happens by mistake—for example, when confidential information is mistakenly e-mailed to someone outside the organization rather than to someone inside the organization. Several cases of privacy </item>
+        <item>Other examples of confidentiality breaches are an employee throwing away a document containing critical information without shredding it, or a hacker who successfully breaks into an internal database of a Web-based organization and steals sensitive information </item>
+    </string-array>
+</resources>

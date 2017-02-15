@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MySpinner</string>
+    <string-array name="names">
+        <item>Facetrick</item>
+        <item>Erick</item>
+        <item>Lenny</item>
+        <item>Patrick</item>
+        <item>Stephen</item>
+        <item>Purity</item>
+        <item>Festus</item>
+    </string-array>
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.erickmwazonga.studentcompanion.AddExercise">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Tasks"
+        android:onClick="addTask"
+        android:background="@drawable/button_rounded"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/viewTaskButton" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/taskName"
+            android:layout_marginTop="5dp"
+            android:hint="Name"
+            android:backgroundTint="@color/colorPrimary"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvDc"
+            android:text="Description"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskName"/>
+        <EditText
+            android:id="@+id/taskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:lines="2"
+            android:inputType="textMultiLine"
+            android:layout_below="@+id/tvDc"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/taskDescription"
+            android:id="@+id/linearLayoutCheck">
+
+            <TextView
+                android:text="TaskDate  :"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/taskDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                style="@android:style/Widget.Holo.Spinner"
+                android:hint="Date"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/linearLayoutCheck"
+            android:id="@+id/linearLayoutTime">
+
+            <TextView
+                android:text="StartTime :"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/taskTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                style="@android:style/Widget.Holo.Spinner"
+                android:hint="StartTime"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/linearLayoutTime">
+            <Button
+                android:id="@+id/taskCancel"
+                android:text="Cancel"
+                android:layout_weight="1"
+                android:onClick="cancelTask"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_rounded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/taskSave"
+                android:text="Save"
+                android:onClick="saveTask"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

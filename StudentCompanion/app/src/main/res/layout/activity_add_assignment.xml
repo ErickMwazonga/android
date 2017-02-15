@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.erickmwazonga.studentcompanion.AddExercise">
+
+    <Button
+        android:id="@+id/viewAssignmentsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="addAssignment"
+        android:text="View Assignments" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/assignmentsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="Name"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/assignmentsSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/assignmentsName"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="Subject"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tvDc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/assignmentsSubject"
+            android:text="Description" />
+
+        <EditText
+            android:id="@+id/assignmentsDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDc"
+            android:backgroundTint="@color/colorPrimary"
+            android:inputType="textMultiLine"
+            android:lines="2" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/assignmentsDescription">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/assignmentsDescription"
+                android:layout_marginRight="10dp"
+                android:text="Status             :" />
+
+            <Spinner
+                android:id="@+id/assignmentSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/assignmentsDescription"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"></Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/linearLayoutStatus">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Due Date        :" />
+
+            <TextView
+                android:id="@+id/assignmentsDate"
+                style="@android:style/Widget.Holo.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="Date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAssignmentTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_below="@+id/linearLayoutCheck">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Submit Time :" />
+
+            <TextView
+                android:id="@+id/assignmnetSubmitTime"
+                style="@android:style/Widget.Holo.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                android:hint="Time" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayoutAssignmentTime"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/assignmentsCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:onClick="assignmentCancel"
+                android:background="@drawable/button_rounded"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/assignmentsSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="saveAssignment"
+                android:background="@drawable/button_rounded"
+                android:text="Save" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_manual"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.example.erickmwazonga.studentcompanion.UserManual">
+
+    <TextView
+        android:text="Day Timetable"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:onClick="day"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:text="Navigate through to view the different lesson thoroughut the week"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:text="Schedule"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:onClick="sche"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Navigate through to view the different Schedules "
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Lesson"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:onClick="les"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Add a lesson and view it through the Day timetable"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:text="Exercise"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="exe"
+        android:textSize="20dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Add an Exercise and view it through the Schedule"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Tasks"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="ta"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Add a Task and view it through the Schedule"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Exams"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:onClick="ex"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Add an Exam and view it through the Schedule"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Assignments"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="assign"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Add an Assignment and view it through the Schedule"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Holiday"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:onClick="hol"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Add a Holiday and view it through the Schedule"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Easy Asset Manager</string>
+    <string name="title_activity_main3">Main3Activity</string>
+
+    <string name="management">MANAGEMENT SYSTEM</string>
+
+    <string name="welcome">Welcome!</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Don\'t have account? Sign Up</string>
+
+    <!--register-->
+    <string name="hint_name">Full Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="btn_sign_up">Sign Up</string>
+
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_password">Enter the password</string>
+    <string name="err_msg_cpassword">Password not matching</string>
+    <string name="title_activity_sign_up2">SignUp2</string>
+    <string name="select_item">Select An Action</string>
+    <string name="action_exit">Exit</string>
+    <string name="add">ADD</string>
+    <string name="hint_iname">Name</string>
+    <string name="hint_iserial">Serial No</string>
+
+    <string-array name="title">
+        <item>Add New Item</item>
+        <item>Borrow An Item</item>
+        <item>Issue An Item</item>
+        <item>Receive An Item</item>
+        <item>Return An Item</item>
+        <item>Record Maintenance</item>
+        <item>View Items</item>
+        <item>Update or Delete An Item</item>
+    </string-array>
+
+    <string-array name="viewItemsList">
+        <item>Available Items</item>
+        <item>Borrowed Items</item>
+        <item>Received Items</item>
+        <item>Issued Items</item>
+        <item>Maintained Items</item>
+        <item>Deleted Items</item>
+    </string-array>
+
+    <string-array name="spinnerAddStatus">
+        <item>Available</item>
+        <item>Borrowed</item>
+        <item>Rented</item>
+        <item>Donated</item>
+        <item>Sold</item>
+        <item>Issued</item>
+        <item>Under Maintenance</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="spinnerAddCategory">
+        <item>Printer</item>
+        <item>PC</item>
+        <item>Laptop</item>
+        <item>Projector</item>
+        <item>Router</item>
+        <item>Switch</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="spinnerDepartments">
+        <item>ICT</item>
+        <item>Finance</item>
+        <item>Procurement</item>
+        <item>HR</item>
+        <item>Media</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="spinnerReturnedStatus">
+        <item>OK</item>
+        <item>Need Maintenance</item>
+    </string-array>
+
+    <string name="title_activity_main__menu">Main_Menu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>

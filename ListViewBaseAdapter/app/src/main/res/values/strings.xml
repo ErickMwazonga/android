@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ListViewBaseAdapter</string>
+    <string-array name="title">
+        <item>MEME 1</item>
+        <item>MEME 2</item>
+        <item>MEME 3</item>
+        <item>MEME 4</item>
+        <item>MEME 5</item>
+        <item>MEME 6</item>
+        <item>MEME 7</item>
+        <item>MEME 8</item>
+        <item>MEME 9</item>
+    </string-array>
+    <string-array name="descriptions">
+        <item>This is a description 1</item>
+        <item>This is a description 2</item>
+        <item>This is a description 3</item>
+        <item>This is a description 4</item>
+        <item>This is a description 5</item>
+        <item>This is a description 6</item>
+        <item>This is a description 7</item>
+        <item>This is a description 8</item>
+        <item>This is a description 9</item>
+    </string-array>
+</resources>

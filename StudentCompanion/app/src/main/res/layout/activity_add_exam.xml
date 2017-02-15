@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.erickmwazonga.studentcompanion.AddExercise">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Exams"
+        android:onClick="addExam"
+        android:background="@drawable/button_rounded"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/viewExamButton" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/examName"
+            android:layout_marginTop="5dp"
+            android:hint="Name"
+            android:backgroundTint="@color/colorPrimary"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/examDescription"
+            android:layout_below="@+id/examName"
+            android:layout_marginTop="5dp"
+            android:hint="Description"
+            android:backgroundTint="@color/colorPrimary"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/examVenue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="5dp"
+            android:hint="Venue"
+            android:singleLine="true"
+            android:layout_below="@+id/examDescription"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/examVenue"
+            android:id="@+id/linearLayoutCheck">
+
+            <TextView
+                android:text="ExamDate : "
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/examDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                style="@android:style/Widget.Holo.Spinner"
+                android:hint="Date"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/linearLayoutCheck"
+            android:id="@+id/linearLayoutTime">
+
+            <TextView
+                android:text="StartTime :"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/examTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimary"
+                style="@android:style/Widget.Holo.Spinner"
+                android:hint="StartTime"/>
+        </LinearLayout>
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvDc"-->
+            <!--android:text="Description"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/linearLayoutTime"/>-->
+
+
+        <!--<EditText-->
+            <!--android:id="@+id/exerciseDescription"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lines="3"-->
+            <!--android:inputType="textMultiLine"-->
+            <!--android:backgroundTint="@color/colorPrimary"-->
+            <!--android:layout_below="@+id/tvDc"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/linearLayoutTime">
+            <Button
+                android:id="@+id/exerciseCancel"
+                android:text="Cancel"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:onClick="cancelExam"
+                android:background="@drawable/button_rounded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/exerciseSave"
+                android:text="Save"
+                android:onClick="saveExam"
+                android:layout_weight="1"
+                android:background="@drawable/button_rounded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

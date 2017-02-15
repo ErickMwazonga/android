@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true">
+
+    <!--silde up=fromYScale 1.0-0.0-->
+    <!--silde up=fromYScale 0.0-1.0-->
+    <translate
+       android:duration="300"
+        android:fromYDelta="1.0"
+        android:toYDelta="0.0"
+        >
+    </translate>
+
+</set>

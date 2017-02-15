@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="App Corner">
+        <menu>
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_action_info"
+                android:title="User Manual" />
+            <item
+                android:id="@+id/sync"
+                android:icon="@drawable/ic_action_syncronise"
+                android:title="Sync" />
+
+        </menu>
+    </item>
+
+    <item android:title="You Corner">
+        <menu>
+            <item
+                android:id="@+id/shareapp"
+                android:icon="@drawable/ic_action_share"
+                android:title="Share App" />
+            <item
+                android:id="@+id/rateapp"
+                android:icon="@drawable/ic_action_star_10"
+                android:title="Rate App" />
+        </menu>
+    </item>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/general"
+                android:icon="@drawable/ic_action_settings"
+                android:title="General" />
+            <item
+                android:id="@+id/reminders"
+                android:icon="@drawable/ic_action_alarm"
+                android:title="Reminders" />
+            <item
+                android:id="@+id/mute"
+                android:icon="@drawable/ic_action_volume_mute"
+                android:title="Mute" />
+        </menu>
+    </item>
+
+</menu>

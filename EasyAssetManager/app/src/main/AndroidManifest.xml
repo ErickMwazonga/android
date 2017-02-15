@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.erickmwazonga.easyassetmanager">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconaa"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".AddItem">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main_Menu" />
+        </activity>
+        <activity
+            android:name=".Main_Menu"
+            android:label="@string/title_activity_main__menu"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".BorrowItem">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main_Menu" />
+        </activity>
+        <activity android:name=".IssueItem">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main_Menu" />
+        </activity>
+        <activity android:name=".ReceiveItem">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main_Menu" />
+        </activity>
+        <activity android:name=".ReturnItem">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main_Menu" />
+        </activity>
+        <activity android:name=".RecordMaintenance">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main_Menu" />
+        </activity>
+        <activity android:name=".UpdateItems">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main_Menu" />
+        </activity>
+        <activity android:name=".ViewList">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Main_Menu" />
+        </activity>
+        <activity android:name=".ViewAvailableItems">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ViewList" />
+        </activity>
+        <activity android:name=".ViewBorrowedItems">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ViewList" />
+        </activity>
+        <activity android:name=".ViewMaintainedItems">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ViewList" />
+        </activity>
+        <activity android:name=".ViewIssuedItems">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ViewList" />
+        </activity>
+        <activity android:name=".ViewReturnedItems">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ViewList" />
+        </activity>
+        <activity android:name=".ViewReceivedItems">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ViewList" />
+        </activity>
+        <activity android:name=".ViewDeletedItems">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ViewList" />
+        </activity>
+    </application>
+
+</manifest>

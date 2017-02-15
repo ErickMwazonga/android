@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyWeek</string>
+    <string name="title_activity_monday">Monday</string>
+</resources>
